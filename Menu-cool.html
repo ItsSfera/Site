@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">IT'SFERA</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">ТГ канал</a></li>
+                <li><a href="#">Підтримка</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+        <img src="https://cdn0.iconfinder.com/data/icons/railway-app/48/for-railway-app-expand_menu-512.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
